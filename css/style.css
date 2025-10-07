@@ -32,10 +32,16 @@ img{
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 .logo .accent {
     color: #2e2f42;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
 }
 
 .nav-list {
