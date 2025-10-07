@@ -2,20 +2,35 @@ body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
 }
 
-img{
+img {
     display: block;
 }
 
-.header{
-    border-bottom: 1px solid #E7E9FC;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .container {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.header {
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-container {
@@ -39,18 +54,21 @@ img{
     color: #2e2f42;
 }
 
-.nav{
+.nav {
     display: flex;
     align-items: center;
 }
 
 .nav-list {
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.2em;
-    line-height: 1.5;
     display: flex;
     gap: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .nav-link {
@@ -66,18 +84,12 @@ img{
     color: #404bbf;
 }
 
-.contacts-list{
+.contacts-list {
     display: flex;
     gap: 40px;
-}
-
-.address {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .address-link {
@@ -108,7 +120,6 @@ img{
 
 .hero-button {
     background-color: #4D5AE5;
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -121,6 +132,7 @@ img{
     height: 56px;
     border: none;
     border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 .hero-button:hover,
@@ -128,26 +140,17 @@ img{
     background-color: #404BBF;
 }
 
-.features{
+.features {
     padding: 120px 0;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-.features-list{
+.features-list {
     display: flex;
     gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
 }
 
 .features-item {
@@ -187,19 +190,24 @@ img{
     margin-bottom: 72px;
 }
 
-.team-list{
+.team-list {
     display: flex;
     gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
 }
 
-.team-item{
+.team-item {
     background-color: #FFFFFF;
     flex-basis: calc((100% - 3 * 24px) / 4);
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 0 0 4px 4px;
 }
 
-.team-info{
+.team-info {
     padding: 32px 0;
+    text-align: center;
 }
 
 .member-title {
@@ -209,7 +217,6 @@ img{
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 8px;
-    text-align: center;
 }
 
 .member-text {
@@ -218,10 +225,9 @@ img{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    text-align: center;
 }
 
-.portfolio{
+.portfolio {
     padding: 120px 0;
 }
 
@@ -241,6 +247,9 @@ img{
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .portfolio-item {
@@ -253,30 +262,13 @@ img{
     padding: 32px 16px;
 }
 
-.item-title {
-    margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-}
-
-.item-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
 .footer {
     background-color: #2E2F42;
     padding: 100px 0;
 }
 
 .footer-logo {
-display: inline-block;
+    display: inline-block;
     margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -288,11 +280,6 @@ display: inline-block;
 }
 
 .footer-logo .accent {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: #F4F4FD;
 }
 
@@ -303,16 +290,5 @@ display: inline-block;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
-}
-
-.features-list,
-.team-list,
-.portfolio-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
 }
 
