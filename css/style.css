@@ -49,6 +49,8 @@ img{
     font-size: 16px;
     letter-spacing: 0.2em;
     line-height: 1.5;
+    display: flex;
+    gap: 40px;
 }
 
 .nav-link {
@@ -56,11 +58,17 @@ img{
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-decoration: none;
+    padding: 24px 0;
 }
 
 .nav-link:hover,
 .nav-link:focus {
     color: #404bbf;
+}
+
+.contacts-list{
+    display: flex;
+    gap: 40px;
 }
 
 .address {
