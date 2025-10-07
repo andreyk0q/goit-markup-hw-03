@@ -4,6 +4,26 @@ body {
     background-color: #FFFFFF;
 }
 
+img{
+    display: block;
+}
+
+.header{
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
